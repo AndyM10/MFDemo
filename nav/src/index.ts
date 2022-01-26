@@ -1,2 +1,1 @@
-import('./App');
-import 'tailwindcss/dist/base.min.css';
+import('./bootstrap');

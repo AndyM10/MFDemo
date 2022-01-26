@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './fedModules.decl.d';
-import NavBar from 'nav/NavBar';
 
 import './index.scss';
 
+const NavBar = React.lazy(
+  () => import('nav/NavBar')
+)
 const App = () => (
   <div className=''>
-    <NavBar/>
+    <React.Suspense fallback='loading...'>
+      <NavBar/>
+    </React.Suspense>
     <div>Name: host</div>
   </div>
 );

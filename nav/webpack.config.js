@@ -46,7 +46,6 @@ module.exports = {
       remotes: {},
       exposes: {
         "./NavBar" : "./src/NavBar.tsx",
-        "./Styles": "./src/index.scss"
       },
       shared: {
         ...deps,

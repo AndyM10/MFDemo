@@ -1,16 +1,19 @@
 import React from 'react'
-import { FaBeer } from 'react-icons/fa'
+import { FaGem, FaMoon, FaHome} from 'react-icons/fa'
+import { SiHomebridge } from 'react-icons/si'
 import './index.scss'
 
 type NavIconProps = { 
     icon: JSX.Element;
+    href: string;
 }
 
-const NavIcon = ({ icon }: NavIconProps) => {
-    return ( 
-      <div className="navicon">
-        {icon}
-      </div>
+const NavIcon = ({ icon, href }: NavIconProps) => {
+    return (
+        <>
+         <div className="navicon">{icon}{href}</div>
+        </>
+       
     )
    
 }
@@ -18,12 +21,9 @@ const NavIcon = ({ icon }: NavIconProps) => {
 export default () => {
     return (
         <div className='fixed top-0 w-screen h-16 flex flex-row bg-gray-900 text-white shadow-lg'>
-            <NavIcon icon={<FaBeer size='32'/>}/>
-            <NavIcon icon={<FaBeer size='32'/>}/>
-            <NavIcon icon={<FaBeer size='32'/>}/>
-            <NavIcon icon={<FaBeer size='32'/>}/>
-            <NavIcon icon={<FaBeer size='32'/>}/>
-            <NavIcon icon={<FaBeer size='32'/>}/>
+            <NavIcon icon={<FaHome size='32'/>} href='Green NFTs'/>
+            <NavIcon icon={<FaGem size='32'/>} href='Loot'/>
+            <NavIcon icon={<FaMoon size='32'/>} href='Dark Mode'/>
         </div>
     )
 }

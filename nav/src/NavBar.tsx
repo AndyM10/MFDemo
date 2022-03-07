@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaGem, FaMoon, FaHome} from 'react-icons/fa'
-import { SiHomebridge } from 'react-icons/si'
 import './index.scss'
 
 type NavIconProps = { 

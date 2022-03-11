@@ -7,8 +7,8 @@ import './index.scss';
 
 const App = () => (
   <div className='container'>
-    <NavBar/>
-    <Collection/>
+      <NavBar/>
+      <Collection/>
   </div>
 );
 ReactDOM.render(<App />, document.getElementById('app'));

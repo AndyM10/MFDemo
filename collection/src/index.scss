@@ -5,3 +5,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  .nftsection {
+    @apply 
+      relative flex items-center justify-center
+      p-4 h-96 w-64 mx-auto bg-gray-400 rounded
+    
+  }
+
+  .collection {
+    @apply relative flex  flex-row w-screen
+    items-center justify-center 
+    p-10 mx-auto
+  }
+
+}

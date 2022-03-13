@@ -4,11 +4,18 @@ import './fedModules.decl.d';
 import NavBar from 'nav/NavBar'
 import Collection from 'collection/Collection';
 import './index.scss';
+import useStore from 'host/store';
 
-const App = () => (
-  <div className='container'>
+
+const App = () => {
+  const { count, increment } = useStore();
+
+  return (
+    <div className='container'>
       <NavBar/>
       <Collection/>
-  </div>
-);
+      <button className='tempbtn' onClick={increment}>{count}</button>
+    </div>
+  ) 
+};
 ReactDOM.render(<App />, document.getElementById('app'));

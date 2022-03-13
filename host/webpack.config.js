@@ -45,9 +45,12 @@ module.exports = {
       filename: "remoteEntry.js",
       remotes: {
         nav: "nav@http://localhost:3001/remoteEntry.js",
-        collection: "collection@http://localhost:3002/remoteEntry.js"
+        collection: "collection@http://localhost:3002/remoteEntry.js",
+        host: "host@http://localhost:3000/remoteEntry.js"
       },
-      exposes: {},
+      exposes: {
+        "./store" : "./src/store.tsx"
+      },
       shared: {
         ...deps,
         react: {

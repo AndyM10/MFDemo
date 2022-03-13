@@ -43,7 +43,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "collection",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        host: "host@http://localhost:3000/remoteEntry.js"
+      },
       exposes: {
         './Collection' : './src/Collection.tsx'
       },

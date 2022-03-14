@@ -29,6 +29,7 @@ export default () => {
   for (let i = 0; i <= count; i ++) {
     sections.push(i)
   }
+  
   return (
     <div className='collection'>
       {sections.map(id => {

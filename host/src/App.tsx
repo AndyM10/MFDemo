@@ -8,14 +8,20 @@ import useStore from 'host/store';
 
 
 const App = () => {
-  const { count, increment } = useStore();
+  const { count, increment, clear } = useStore();
 
   return (
     <div className='container'>
       <NavBar/>
       <Collection/>
-      <button className='tempbtn' onClick={increment}>{count}</button>
+      <div className='flex w-screen flex-row'>
+        <button className='tempbtn' onClick={increment}>{count}</button>
+        <button className='tempbtn' onClick={clear}>Clear</button>
+      </div>
     </div>
+
+
+      
   ) 
 };
 ReactDOM.render(<App />, document.getElementById('app'));

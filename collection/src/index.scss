@@ -15,8 +15,8 @@ body {
   }
 
   .collection {
-    @apply relative flex flex-row w-screen
-    items-center justify-center 
+    @apply relative flex flex-row w-screen flex-wrap
+    gap-3 items-center justify-center 
     p-10 mx-auto
   }
 

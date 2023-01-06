@@ -19,7 +19,7 @@ const NavIcon = ({ icon, href }: NavIconProps) => {
 
 export default () => {
     return (
-        <div className='fixed top-0 w-screen h-16 flex flex-row bg-gray-900 text-white shadow-lg'>
+        <div className='top-0 w-screen h-16 flex flex-row bg-gray-900 text-white shadow-lg'>
             <NavIcon icon={<FaHome size='32'/>} href='Green NFTs'/>
             <NavIcon icon={<FaGem size='32'/>} href='Loot'/>
             <NavIcon icon={<FaMoon size='32'/>} href='Dark Mode'/>

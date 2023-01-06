@@ -4,15 +4,28 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
 }
 
 @layer components {
-  .tempbtn {
-    @apply px-6 py-2.5 bg-green-500 text-white
+  .nftsection {
+    @apply 
+      relative flex flex-col items-center justify-center
+      p-4 h-96 w-64 mx-auto bg-gray-400 rounded
+    
+  }
+
+  .collection {
+    @apply relative flex flex-row w-screen flex-wrap
+    gap-3 items-center justify-center 
+    p-10 mx-auto
+  }
+
+  .secBtn {
+    @apply inline-block px-6 py-2.5 bg-green-500 text-white
     font-medium text-xs leading-tight uppercase rounded shadow-md 
     hover:bg-green-700 hover:shadow-lg focus:bg-green-700 
     focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 
     active:shadow-lg transition duration-150 ease-in-out
   }
+
 }
